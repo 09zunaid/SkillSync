@@ -1,6 +1,4 @@
 networkx
-scikit-learn
-numpy
 pypdf
 spacy
 fastapi
