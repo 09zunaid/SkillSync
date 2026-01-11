@@ -23,7 +23,8 @@ function App() {
     formData.append("job_description", jobDescription); // Send raw text
 
     try {
-      const response = await fetch("http://localhost:8000/analyze", {
+      // Use relative path for Vercel (proxied in Dev)
+      const response = await fetch("/api/analyze", {
         method: "POST",
         body: formData,
       });
