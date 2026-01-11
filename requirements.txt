@@ -1,0 +1,9 @@
+sentence-transformers
+networkx
+scikit-learn
+numpy
+pypdf
+spacy
+fastapi
+uvicorn
+python-multipart
