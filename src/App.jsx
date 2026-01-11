@@ -22,9 +22,10 @@ function App() {
     formData.append("file", file);
     formData.append("job_description", jobDescription); // Send raw text
 
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
     try {
-      // Use relative path for Vercel (proxied in Dev)
-      const response = await fetch("/api/analyze", {
+      const response = await fetch(`${apiUrl}/analyze`, {
         method: "POST",
         body: formData,
       });
