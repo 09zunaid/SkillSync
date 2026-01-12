@@ -1,0 +1,13 @@
+api/
+.venv/
+__pycache__/
+*.py
+requirements.txt
+README.md
+task.md
+implementation_plan.md
+walkthrough.md
+deployment_guide.md
+.python-version
+# Ignore node_modules if you specify a custom install command
+# node_modules/
