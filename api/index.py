@@ -1,8 +1,14 @@
+import sys
+import os
 from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 import uvicorn
 import json
+
+# Add current directory to sys.path to allow absolute imports of neighboring modules
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from pipeline import ProcessingPipeline
 
 app = FastAPI()
